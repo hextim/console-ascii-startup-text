@@ -1,4 +1,15 @@
 {
+    "_comment": "thanks to Joan G. Stark (Spunk) for the logo",
+    "logo": [
+        "    .---.",
+        "   /     \\",
+        "   \\.@-@./",
+        "   /`\\_/`\\",
+        "  //  _  \\\\",
+        " | \\     )|_",
+        "/`\\_`>  <_/ \\",
+        "\\__/'---'\\__/"
+    ],
     "delay_logo": 1,
     "delay_text": 1
 }
