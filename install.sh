@@ -1,6 +1,6 @@
 #!/bin/bash
 
-repository="https://raw.githubusercontent.com/hextim/console-ascii-startup-text/main/install.sh"
+repository="https://raw.githubusercontent.com/hextim/console-ascii-startup-text/main/"
 
 mkdir -p ~/.local/share/cast/ ~/.config/cast/ ~/.local/bin/
 
