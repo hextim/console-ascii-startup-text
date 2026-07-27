@@ -1,3 +1,5 @@
+# the code is not functional yet
+
 import subprocess
 import json
 
