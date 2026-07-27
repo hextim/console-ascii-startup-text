@@ -1,0 +1,1 @@
+# console-ascii-startup-text
