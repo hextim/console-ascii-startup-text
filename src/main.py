@@ -1,12 +1,23 @@
 import subprocess
+import os
 import sys
 import json
 
+config_dir = os.path.expanduser("~/.config/cast")
+install_dir = os.path.expanduser("~/.local/share/cast")
+script_dir = os.path.dirname(os.path.abspath(__file__))
+
+
+if script_dir == install_dir:
+    config_path = os.path.join(config_dir, "config.json")
+else:
+    config_path = os.path.join(script_dir, "config.json")
+
 # checking config
 try:
-    with open("config.json", "r", encoding="utf-8") as file:
+    with open(config_path, "r", encoding="utf-8") as file:
         config_data = json.load(file) # converting the config content into a standard python dictionary
-except Exception as err:
+except (FileNotFoundError, json.JSONDecodeError):
     sys.exit("ERROR: failed to open the configuration file")
 
 # transferring data from the config to standard variables for convenience
@@ -14,6 +25,7 @@ logo = config_data["logo"]
 delay_logo = config_data["delay_logo"]
 delay_text = config_data["delay_text"]
 
+# check for the presence of the figlet command
 try:
     text = subprocess.check_output("figlet linux", shell=True, text=True, stderr=subprocess.STDOUT).splitlines() # ASCII text generation (the figlet utility is available exclusively on Linux distributions)
 except subprocess.CalledProcessError:
