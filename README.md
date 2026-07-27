@@ -3,7 +3,7 @@
 [![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)](https://www.python.org/)
 [![gnu](https://img.shields.io/badge/gnu-%23A42E2B.svg?style=for-the-badge&logo=gnu&logoColor=white)](https://www.gnu.org/licenses/gpl-3.0.html)
 [![Linux](https://img.shields.io/badge/Linux_Utility-FCC624?style=for-the-badge&logo=linux&logoColor=black)](https://kernel.org/)
-![Version](https://img.shields.io/badge/ver._0.0.0-4A4E51?style=for-the-badge&logoColor=white)
+![Version](https://img.shields.io/badge/ver._1.0.0-4A4E51?style=for-the-badge&logoColor=white)
 
 # CAST (Console ASCII Startup Text)
 
@@ -27,6 +27,14 @@ pacman -S figlet python
 ```
 
 It is recommended to update the databases before installation.
+
+## Automatic installation
+
+For automatic installation, the easiest method is to use curl:
+
+```bash
+curl -sSL https://raw.githubusercontent.com/hextim/console-ascii-startup-text/main/install.sh | bash
+```
 
 ## Manual start
 
@@ -56,7 +64,3 @@ unset rc
 # auto-start CAST
 python3 /file/path/main.py
 ```
-
-## Automatic installation using a script
-
-In the making
