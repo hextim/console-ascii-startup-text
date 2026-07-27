@@ -1,6 +1,7 @@
 {
     
-    "_comment": "thanks to Joan G. Stark (Spunk) for the logo",
+    "_CREDITS": "thanks to Joan G. Stark (Spunk) for the logo",
+    
     "logo": [
         "    .---.",
         "   /     \\",
@@ -12,7 +13,7 @@
         "\\__/'---'\\__/"
     ],
     
-    "delay_logo": 1,
+    "delay_logo": 0,
     "delay_text": 1
     
 }
