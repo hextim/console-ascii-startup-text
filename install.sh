@@ -23,5 +23,3 @@ if ! grep -q "cast" "$HOME/.zshrc" 2>/dev/null; then
 fi
 
 echo "The installation was successful!"
-
-read -p "Press Enter to Continue..."
