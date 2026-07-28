@@ -15,4 +15,6 @@ rm -f ~/.local/bin/cast
 sed -i '/cast/d' ~/.bashrc 2>/dev/null
 sed -i '/cast/d' ~/.zshrc 2>/dev/null
 
+echo "The removal was successful!" 
 read -p "Press Enter to Continue..."
+rm uninstall.sh
