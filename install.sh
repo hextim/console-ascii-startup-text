@@ -4,7 +4,7 @@ repository="https://raw.githubusercontent.com/hextim/console-ascii-startup-text/
 
 mkdir -p ~/.local/share/cast/ ~/.config/cast/ ~/.local/bin/
 
-curl -sSL "$repository/main.py" -o ~/.local/share/cast/main.py
+curl -sSL "$repository/src/main.py" -o ~/.local/share/cast/main.py
 curl -sSL "$repository/config.json" -o ~/.config/cast/config.json
 
 echo "python3 ~/.local/share/cast/main.py" > ~/.local/bin/cast
