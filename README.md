@@ -41,11 +41,7 @@ curl -sSL https://raw.githubusercontent.com/hextim/console-ascii-startup-text/ma
 Before deletion, it is recommended to navigate to a directory such as `Downloads/` for safety. To install and run the uninstallation script, you need to enter the following commands:
 
 ```bash
-# Installing the script
-curl -sSL https://raw.githubusercontent.com/hextim/console-ascii-startup-text/main/uninstall.sh -o uninstall.sh
-
-# Running it
-bash uninstall.sh
+curl -sSL https://raw.githubusercontent.com/hextim/console-ascii-startup-text/main/uninstall.sh -o uninstall.sh && bash uninstall.sh
 ```
 
 ## Manual start
