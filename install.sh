@@ -1,5 +1,13 @@
 #!/bin/bash
 
+read -p "Are you sure you want to install CAST? (y/N): " answer
+answer=${answer:-n}
+
+if [ "$answer" != "y" ] && [ "$answer" != "Y" ]; then
+    echo "The installation was interrupted"
+    exit 0
+fi
+
 repository="https://raw.githubusercontent.com/hextim/console-ascii-startup-text/main/"
 
 echo "Directory creation..."
@@ -23,3 +31,5 @@ if ! grep -q "cast" "$HOME/.zshrc" 2>/dev/null; then
 fi
 
 echo "The installation was successful!"
+read -p "Press Enter to Continue..."
+rm install.sh
