@@ -3,7 +3,7 @@
 [![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)](https://www.python.org/)
 [![gnu](https://img.shields.io/badge/gnu-%23A42E2B.svg?style=for-the-badge&logo=gnu&logoColor=white)](https://www.gnu.org/licenses/gpl-3.0.html)
 [![Linux](https://img.shields.io/badge/Linux_Utility-FCC624?style=for-the-badge&logo=linux&logoColor=black)](https://kernel.org/)
-![Version](https://img.shields.io/badge/ver._1.0.0-4A4E51?style=for-the-badge&logoColor=white)
+[![Version](https://img.shields.io/badge/ver._1.0.0-4A4E51?style=for-the-badge&logoColor=white)](https://github.com/hextim/console-ascii-startup-text/releases)
 
 # CAST (Console ASCII Startup Text)
 
@@ -38,7 +38,7 @@ curl -sSL https://raw.githubusercontent.com/hextim/console-ascii-startup-text/ma
 
 ## Manual start
 
-To launch the utility, you need to navigate to the src/ directory and enter the following command:
+To launch the utility, you need to navigate to the `src/` directory and enter the following command:
 
 ```bash
 python3 main.py
@@ -46,7 +46,7 @@ python3 main.py
 
 ## Manual installation
 
-If you want to set up a program to launch automatically, you simply need to add a single line to the .bashrc or .zshrc file located in the user's home directory:
+Before manual installation, you must move the configuration file to the directory containing `main.py` or to the `~/.config/cast` folder. If you want to set up a program to launch automatically, you simply need to add a single line to the .bashrc or .zshrc file located in the user's home directory:
 
 ``` bash
 # ... (existing content of your .bashrc)
