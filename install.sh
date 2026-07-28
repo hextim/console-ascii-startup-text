@@ -7,7 +7,7 @@ mkdir -p ~/.local/share/cast/ ~/.config/cast/ ~/.local/bin/
 
 echo "Installing the source code..."
 curl -sSL "$repository/src/main.py" -o ~/.local/share/cast/main.py
-curl -sSL "$repository/config.json" -o ~/.config/cast/config.json
+curl -sSL "$repository/src/config.json" -o ~/.config/cast/config.json
 
 echo "Installing the utility on the system..."
 echo "python3 ~/.local/share/cast/main.py" > ~/.local/bin/cast
