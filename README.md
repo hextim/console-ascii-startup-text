@@ -4,7 +4,7 @@
 [![GNU](https://img.shields.io/badge/gnu-%23A42E2B.svg?style=for-the-badge&logo=gnu&logoColor=white)](https://www.gnu.org/licenses/gpl-3.0.html)
 [![Linux](https://img.shields.io/badge/-FCC624?style=for-the-badge&logo=linux&logoColor=black)](https://kernel.org/)
 [![MacOS](https://img.shields.io/badge/-000000?style=for-the-badge&logo=apple&logoColor=white)](https://apple.com/)
-[![Version](https://img.shields.io/badge/ver._1.0.0-4A4E51?style=for-the-badge&logoColor=white)](https://github.com/hextim/console-ascii-startup-text/releases)
+[![Version](https://img.shields.io/badge/ver._0.0.0-4A4E51?style=for-the-badge&logoColor=white)](https://github.com/hextim/console-ascii-startup-text/releases)
 
 # CAST (Console ASCII Startup Text)
 
