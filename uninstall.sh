@@ -1,9 +1,9 @@
 #!/bin/bash
 
-read -p "Are you sure you want to delete CAST? (y/N): " solution
-solution=${solution:-n}
+read -p "Are you sure you want to delete CAST? (y/N): " answer
+answer=${answer:-n}
 
-if [ "answer" != "y" ]; then
+if [ "$answer" != "y" ] && [ "$answer" != "Y" ]; then
     echo "The removal process has been cancelled"
     exit 0
 fi
