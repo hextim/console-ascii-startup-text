@@ -27,7 +27,7 @@ delay_text = config_data["delay_text"]
 
 # check for the presence of the figlet command
 try:
-    text = subprocess.check_output("figlet linux", shell=True, text=True, stderr=subprocess.STDOUT).splitlines() # ASCII text generation (the figlet utility is available exclusively on Linux distributions)
+    text = subprocess.check_output(f"figlet {config_data["text"]}", shell=True, text=True, stderr=subprocess.STDOUT).splitlines() # ASCII text generation (the figlet utility is available exclusively on Linux distributions)
 except subprocess.CalledProcessError:
     sys.exit("ERROR: figlet command not found")
 
