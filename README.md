@@ -30,10 +30,18 @@ It is recommended to update the databases before installation.
 
 ## Automatic installation
 
-For automatic installation, the easiest method is to use curl:
+For automatic installation, the easiest method is to use `curl`:
 
 ```bash
 curl -sSL https://raw.githubusercontent.com/hextim/console-ascii-startup-text/main/install.sh | bash
+```
+
+## Automatic deletion
+
+For automatic deletion, it is also best to use `curl`:
+
+```bash
+curl -sSL https://raw.githubusercontent.com/hextim/console-ascii-startup-text/main/uninstall.sh | bash
 ```
 
 ## Manual start
@@ -48,7 +56,7 @@ python3 main.py
 
 Before manual installation, you must move the configuration file to the directory containing `main.py` or to the `~/.config/cast` folder. If you want to set up a program to launch automatically, you simply need to add a single line to the .bashrc or .zshrc file located in the user's home directory:
 
-``` bash
+```bash
 # ... (existing content of your .bashrc)
 
 # User specific aliases and functions
@@ -63,4 +71,21 @@ unset rc
 
 # auto-start CAST
 python3 /file/path/main.py
+```
+
+## Manual removal
+
+For manual removal, you will need to enter a few commands:
+
+```bash
+# Deleting directories containing files required for CAST
+rm -rf ~/.local/share/cast/
+rm -rf ~/.config/cast/
+rm -f ~/.local/bin/cast
+
+# Removing CAST from startup
+sed -i '/cast/d' ~/.bashrc 2>/dev/null
+
+# If you are using zsh, you will need to add this command as well.
+sed -i '/cast/d' ~/.zshrc 2>/dev/null
 ```
