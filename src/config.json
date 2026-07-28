@@ -1,7 +1,7 @@
 {
-    
+
     "_CREDITS": "thanks to Joan G. Stark (Spunk) for the logo",
-    
+
     "logo": [
         "    .---.",
         "   /     \\",
@@ -12,8 +12,9 @@
         "/`\\_`>  <_/ \\",
         "\\__/'---'\\__/"
     ],
-    
+
+    "text": "penguin",
     "delay_logo": 0,
     "delay_text": 1
-    
+
 }
