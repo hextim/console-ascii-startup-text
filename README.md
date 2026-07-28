@@ -1,8 +1,9 @@
 <div align="center">
 
 [![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)](https://www.python.org/)
-[![gnu](https://img.shields.io/badge/gnu-%23A42E2B.svg?style=for-the-badge&logo=gnu&logoColor=white)](https://www.gnu.org/licenses/gpl-3.0.html)
-[![Linux](https://img.shields.io/badge/Linux_Utility-FCC624?style=for-the-badge&logo=linux&logoColor=black)](https://kernel.org/)
+[![GNU](https://img.shields.io/badge/gnu-%23A42E2B.svg?style=for-the-badge&logo=gnu&logoColor=white)](https://www.gnu.org/licenses/gpl-3.0.html)
+[![Linux](https://img.shields.io/badge/-FCC624?style=for-the-badge&logo=linux&logoColor=black)](https://kernel.org/)
+[![MacOS](https://img.shields.io/badge/-000000?style=for-the-badge&logo=apple&logoColor=white)](https://apple.com/)
 [![Version](https://img.shields.io/badge/ver._1.0.0-4A4E51?style=for-the-badge&logoColor=white)](https://github.com/hextim/console-ascii-startup-text/releases)
 
 # CAST (Console ASCII Startup Text)
@@ -24,21 +25,28 @@ apt install figlet python3
 
 # Arch
 pacman -S figlet python
+
+# macOS
+brew install figlet python3
 ```
 
 It is recommended to update the databases before installation.
 
+## Important note before installation or removal
+
+Before starting the installation or uninstallation process, I recommend navigating to a directory such as `Downloads/` or creating a separate folder to ensure system security.
+
 ## Automatic installation
 
-For automatic installation, the easiest method is to use `curl`:
+For installation, you only need to enter the following command:
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/hextim/console-ascii-startup-text/main/install.sh | bash
+curl -sSL https://raw.githubusercontent.com/hextim/console-ascii-startup-text/main/install.sh -o install.sh && bash install.sh
 ```
 
 ## Automatic deletion
 
-Before deletion, it is recommended to navigate to a directory such as `Downloads/` for safety. To install and run the uninstallation script, you need to enter the following commands:
+To uninstall, enter the following in the terminal:
 
 ```bash
 curl -sSL https://raw.githubusercontent.com/hextim/console-ascii-startup-text/main/uninstall.sh -o uninstall.sh && bash uninstall.sh
@@ -52,7 +60,7 @@ To launch the utility, you need to navigate to the `src/` directory and enter th
 python3 main.py
 ```
 
-## Manual installation
+## Manual configuration and installation
 
 Before manual installation, you must move the configuration file to the directory containing `main.py` or to the `~/.config/cast` folder. If you want to set up a program to launch automatically, you simply need to add a single line to the .bashrc or .zshrc file located in the user's home directory:
 
