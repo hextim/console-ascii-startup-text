@@ -38,10 +38,14 @@ curl -sSL https://raw.githubusercontent.com/hextim/console-ascii-startup-text/ma
 
 ## Automatic deletion
 
-For automatic deletion, it is also best to use `curl`:
+Before deletion, it is recommended to navigate to a directory such as `Downloads/` for safety. To install and run the uninstallation script, you need to enter the following commands:
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/hextim/console-ascii-startup-text/main/uninstall.sh | bash
+# Installing the script
+curl -sSL https://raw.githubusercontent.com/hextim/console-ascii-startup-text/main/uninstall.sh -o uninstall.sh
+
+# Running it
+bash uninstall.sh
 ```
 
 ## Manual start
