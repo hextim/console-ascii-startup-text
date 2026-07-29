@@ -29,7 +29,7 @@ text_margin = config_data["text_margin"]
 try:
     text = subprocess.check_output(f"figlet -f {config_data["font"]} {config_data["text"]}", shell=True, text=True, stderr=subprocess.STDOUT).splitlines() # ASCII text generation (the figlet utility is available exclusively on Linux distributions)
 except subprocess.CalledProcessError:
-    sys.exit("ERROR: figlet command not found")
+    sys.exit("ERROR: an unknown error occurred while working with figlet")
 
 # list cursors
 logo_index = 0
