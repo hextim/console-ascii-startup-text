@@ -22,12 +22,12 @@ except (FileNotFoundError, json.JSONDecodeError):
 
 # transferring data from the config to standard variables for convenience
 logo = config_data["logo"]
-delay_logo = config_data["delay_logo"]
-delay_text = config_data["delay_text"]
+logo_margin = config_data["logo_margin"]
+text_margin = config_data["text_margin"]
 
 # check for the presence of the figlet command
 try:
-    text = subprocess.check_output(f"figlet {config_data["text"]}", shell=True, text=True, stderr=subprocess.STDOUT).splitlines() # ASCII text generation (the figlet utility is available exclusively on Linux distributions)
+    text = subprocess.check_output(f"figlet -f {config_data["font"]} {config_data["text"]}", shell=True, text=True, stderr=subprocess.STDOUT).splitlines() # ASCII text generation (the figlet utility is available exclusively on Linux distributions)
 except subprocess.CalledProcessError:
     sys.exit("ERROR: figlet command not found")
 
@@ -36,18 +36,27 @@ logo_index = 0
 text_index = 0
 
 max_logo_width = len(max(logo, key=len)) if logo else 0 # we find the maximum width of the ASCII logo
-total_lines = max(len(logo) + delay_logo, len(text) + delay_text) # total number of lines for image display
+total_lines = max(len(logo) + logo_margin, len(text) + text_margin) # total number of lines for image display
 
 # image output
+print("\n" * config_data["top_margin"])
 for i in range(total_lines):
-    if delay_logo <= i < delay_logo + len(logo):
+
+    print(" " * config_data["edge_margin"], end="")
+    
+    # logo display
+    if logo_margin <= i < logo_margin + len(logo):
         print(logo[logo_index] + " " * (max_logo_width - len(logo[logo_index])), end="")
         logo_index += 1
     else:
         print(" " * max_logo_width, end="")
 
-    if delay_text <= i < delay_text + len(text):
+    print(" " * config_data["middle_margin"], end="")
+    
+    # text display
+    if text_margin <= i < text_margin + len(text):
         print(text[text_index])
         text_index += 1
     else:
         print()
+print("\n" * config_data["bottom_margin"])
