@@ -39,7 +39,7 @@ max_logo_width = len(max(logo, key=len)) if logo else 0 # we find the maximum wi
 total_lines = max(len(logo) + logo_margin, len(text) + text_margin) # total number of lines for image display
 
 # image output
-print("\n" * config_data["top_margin"])
+print("\n" * config_data["top_margin"], end="")
 for i in range(total_lines):
 
     print(" " * config_data["edge_margin"], end="")
@@ -59,4 +59,5 @@ for i in range(total_lines):
         text_index += 1
     else:
         print()
-print("\n" * config_data["bottom_margin"])
+        
+print("\n" * config_data["bottom_margin"], end="")

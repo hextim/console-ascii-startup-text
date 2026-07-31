@@ -1,0 +1,25 @@
+{
+
+    "_CREDITS": "thanks to Joan G. Stark (Spunk) for the logo",
+
+    "logo": [
+        "    .---.",
+        "   /     \\",
+        "   \\.@-@./",
+        "   /`\\_/`\\",
+        "  //  _  \\\\",
+        " | \\     )|_",
+        "/`\\_`>  <_/ \\",
+        "\\__/'---'\\__/"
+    ],
+
+    "text": "penguin",
+    "font": "standard",
+    "logo_margin": 0,
+    "text_margin": 1,
+    "top_margin": 1,
+    "bottom_margin": 1,
+    "edge_margin": 1,
+    "middle_margin": 1
+
+}
